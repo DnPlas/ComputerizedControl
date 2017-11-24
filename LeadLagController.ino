@@ -9,7 +9,7 @@ int u_1 = 0;
 int u_2 = 0;
 int error_1 = 0;
 int error_2 = 0;
-int k=2;
+int k=20;
 
 void setup(){
  //initialize the pins

@@ -12,6 +12,7 @@ int k=12;
 
 void setup(){
  //initialize the pins
+ pinMode(LED_BUILTIN, OUTPUT);
  pinMode(outputu, OUTPUT);
  pinMode(inputy, INPUT);
  pinMode(referencia, INPUT);
@@ -21,8 +22,13 @@ void setup(){
 
 
 void loop(){
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000); 
+  
  //ref = analogRead(referencia); //si se quiere leer una ref. externa
- ref = 204; //1 V
+ ref = 204; //1 V - 2V 408
  y = analogRead(inputy);
  //if (y < 0) { y = 0;}
  error = (ref -  y); 

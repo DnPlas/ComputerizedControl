@@ -8,7 +8,7 @@ int u = 0;
 int u_1 = 0;
 int error_1 = 0;
 int error_2 = 0;
-int k=2;
+int k=35;
 
 void setup(){
  //initialize the pins
